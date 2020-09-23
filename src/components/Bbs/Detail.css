@@ -1,0 +1,62 @@
+.item2 {
+    background: white;
+    width: 92%;
+    height: 1100px;
+    border-radius: 3px;
+    margin-left: 4%;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.top2, .section2, .bottom2 {
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 3%;
+}
+
+.title2 {
+    color: #e67e22;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.right2, .name2, .date2, .views2, .wc2 {
+    display: inline-block;
+}
+
+.name2 {
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+.right2 {
+    float: right;
+}
+
+.date2, .views2, .wc2 {
+    color: #7f7f7f;
+}
+
+.wc2 {
+    margin-left: 6px;
+}
+
+.section2 {
+    padding-top: 2%;
+}
+
+.sectionRight2 {
+    float: right;
+    margin-top: 3%;
+}
+.modified2, .delete2 {
+    display: inline-block;
+    color: #7f7f7f;
+    font-size: 0.9rem;
+}
+
+.modified2 {
+    margin-right: 8px;
+    text-decoration: none;
+}

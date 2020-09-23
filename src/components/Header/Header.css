@@ -1,0 +1,29 @@
+.logo {
+    height: 3.5rem;
+    width: 20%;
+    line-height: 3.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    float: left;
+    margin-left: 4%;
+}
+
+.menu {
+    float: right;
+    width: 400px;
+    height: 3.5rem;
+    margin-right: 4%;
+}
+
+.menu-item {
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    line-height: 3.5rem;
+    width: 100px;
+    text-align: right;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
