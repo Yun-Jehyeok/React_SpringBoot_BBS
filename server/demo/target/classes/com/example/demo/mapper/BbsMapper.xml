@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTDMapper3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.example.demo.mapper.BbsMapper">
+	
+		<select id="bbsList" resultType="com.example.demo.vo.BbsVO">
+			SELECT * FROM bbs ORDER BY id
+		</select>
+		
+		<insert id="insertBbs" parameterType="com.example.demo.vo.BbsVO">
+			INSERT INTO bbs(nickname, title, content, category)
+			VALUES(#{nickname}, #{title}, #{content}, #{category})
+		</insert>
+		
+		<select id="fetchBbsByID" resultType="com.example.demo.vo.BbsVO" parameterType="int">
+			SELECT * FROM bbs
+			WHERE id = #{id}
+		</select>
+		
+		<delete id="deleteBbs" parameterType="int">
+			DELETE FROM bbs
+			WHERE id = #{id}
+		</delete>
+		
+		<update id="updateBbs" parameterType="com.example.demo.vo.BbsVO">
+			UPDATE bbs
+			SET title = #{title}, content = #{content}, category = #{category}
+			WHERE id = #{id}
+		</update>
+	</mapper>
